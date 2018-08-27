@@ -53,5 +53,7 @@ galaxy_info:
     #       Maximum 20 tags per role.
 
 dependencies: 
-  - { role: 'git+https://github.com/4eixos/role-base.git,master'}
-  - { role: 'git+https://github.com/4eixos/role-docker.git,master'}
+  - name: "role-base"
+    src: 'git+https://github.com/4eixos/role-base.git,master'
+  - name: "role-docker"
+    src: 'git+https://github.com/4eixos/role-docker.git,master'
