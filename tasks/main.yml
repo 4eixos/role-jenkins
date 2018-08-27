@@ -2,4 +2,4 @@
 # tasks file for jenkins
 
 - import_role:
-    name: role-base
+    name: role-docker
