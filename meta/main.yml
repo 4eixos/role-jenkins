@@ -54,6 +54,6 @@ galaxy_info:
 
 dependencies: 
   - name: "role-base"
-    src: 'git+https://github.com/4eixos/role-base.git,master'
+    src: 'git+https://github.com/4eixos/role-base.git'
   - name: "role-docker"
-    src: 'git+https://github.com/4eixos/role-docker.git,master'
+    src: 'git+https://github.com/4eixos/role-docker.git'
