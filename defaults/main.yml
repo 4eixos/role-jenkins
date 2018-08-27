@@ -1,2 +1,8 @@
 ---
 # defaults file for jenkins
+
+install_in_docker: "yes"
+
+jenkins_container_name: "jenkins"
+
+jenkins_container_image: "jenkins/jenkins:lts"
