@@ -5,9 +5,9 @@
     name: role-docker
 
 - include_tasks: install_in_docker.yml
-  when: (install_in_docker == "yes")
+#  when: (install_in_docker == "yes")
 
-- include_tasks: install.yml
-  when: (install_in_docker == "no")
+#- include_tasks: install.yml
+#  when: (install_in_docker == "no")
   
 
