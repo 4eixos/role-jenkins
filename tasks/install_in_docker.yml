@@ -1,6 +1,6 @@
 - name: pulling jenkins image
   docker_image:
-    name: {{ jenkins_container_name }}
+    name: "{{ jenkins_container_name }}"
 
 - name: running jenkins service
   hosts: localhost
