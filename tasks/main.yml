@@ -3,9 +3,11 @@
 
 - import_role:
     name: role-docker
-  when: (install_in_docker == "yes")
 
 - include_tasks: install_in_docker.yml
   when: (install_in_docker == "yes")
+
+- include_tasks: install.yml
+  when: (install_in_docker == "no")
   
 
