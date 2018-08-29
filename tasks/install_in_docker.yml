@@ -3,9 +3,21 @@
     name: {{ jenkins_container_name }}
 
 - name: running jenkins service
-  docker_container:
-    name: {{ jenkins_container_name }}
-    image: {{ jenkins_container_image }}
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - docker_service:
+        project_src: jenkins
+        state: absent
+    - docker_service:
+        project_name: jenkins
+        definition:
+          version: '2'
+          services:
+            jenkins: 
+              image: "{{ jenkins_container_image}}"  
+  
 
 
 
